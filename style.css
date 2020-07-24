@@ -28,15 +28,21 @@ img {
 }
 
 .container {
-  margin: auto;
-  width: 80%;
+  margin: 1rem auto;
+  width: 94%;
   max-width: 100%;
+}
+
+.container .logo {
+  width: 14rem;
+  margin-bottom: 1.5rem;
 }
 
 .container .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 2rem 0;
 }
 
 .container .flex > div {
@@ -46,26 +52,159 @@ img {
 }
 
 .container .flex > div:first-child {
-  margin-right: 1.5rem;
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
 }
 
 .container .flex > div:last-child {
-  margin-left: 1.5rem;
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
 }
 
 .container .flex .content h1 {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 2.7rem;
+  margin-top: 3rem;
+}
+
+.container .flex .content p {
+  opacity: 0.8;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .container .flex .content button {
   background: white;
   border-radius: 50px;
   border: none;
+  margin-top: 2rem;
   outline: none;
   color: #674baf;
   font-size: 1.5rem;
   padding: 1.3rem 5rem;
   font-family: "open sans", sans-serif;
+  -webkit-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  -webkit-transition: 0.1s ease-in all;
+  transition: 0.1s ease-in all;
+}
+
+.container .flex .content button:hover {
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.container .flex .image img {
+  width: 93%;
+}
+
+.container .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container .social a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 1.2rem;
+  height: 3rem;
+  width: 3rem;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: url("images/bg-mobile.svg") no-repeat top/contain #674baf;
+  }
+  .container {
+    margin: 2rem 0;
+  }
+  .container .logo {
+    width: 10rem;
+  }
+  .container .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2.5rem 0;
+    padding: 0 1.3rem;
+  }
+  .container .flex > div:first-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-right: 0;
+  }
+  .container .flex > div:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-left: 0;
+    text-align: center;
+  }
+  .container .flex .image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .flex .image img {
+    width: 100%;
+  }
+  .container .flex .content h1 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  .container .flex .content p {
+    font-size: 1rem;
+  }
+  .container .flex .content button {
+    font-size: 0.9rem;
+    padding: 0.7rem 4rem;
+  }
+  .container .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 1.3rem;
+  }
+  .container .social a {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1.3rem;
+  }
+  .container .social a i {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
