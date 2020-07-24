@@ -9,7 +9,7 @@ body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1rem;
   background: url("images/bg-desktop.svg") no-repeat center/cover #674baf;
   min-height: 100vh;
   display: -webkit-box;
@@ -24,18 +24,18 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 85%;
 }
 
 .container {
   margin: 2rem auto 0 auto;
-  width: 94%;
+  width: 90%;
   max-width: 100%;
 }
 
 .container .logo {
-  width: 14rem;
-  margin-bottom: 1.5rem;
+  width: 12rem;
+  margin-bottom: 2rem;
 }
 
 .container .flex {
@@ -55,24 +55,26 @@ img {
   -webkit-box-flex: 0.6;
       -ms-flex: 0.6;
           flex: 0.6;
+  margin-right: -2rem;
 }
 
 .container .flex > div:last-child {
   -webkit-box-flex: 0.4;
       -ms-flex: 0.4;
           flex: 0.4;
+  margin-left: -1rem;
 }
 
 .container .flex .content h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 2.7rem;
-  margin-top: 3rem;
+  font-size: 2.2rem;
+  margin-top: 2rem;
 }
 
 .container .flex .content p {
   opacity: 0.8;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   font-weight: bold;
   letter-spacing: 1px;
@@ -82,11 +84,11 @@ img {
   background: white;
   border-radius: 50px;
   border: none;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   outline: none;
   color: #674baf;
-  font-size: 1.5rem;
-  padding: 1.3rem 5rem;
+  font-size: 1.3rem;
+  padding: 1.1rem 5rem;
   font-family: "open sans", sans-serif;
   -webkit-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
@@ -103,7 +105,7 @@ img {
 }
 
 .container .flex .image img {
-  width: 93%;
+  width: 95%;
 }
 
 .container .social {
@@ -130,10 +132,11 @@ img {
   border: 1px solid white;
   border-radius: 50%;
   margin-left: 1.2rem;
-  height: 3rem;
-  width: 3rem;
+  height: 3.1rem;
+  width: 3.1rem;
   color: white;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 @media screen and (orientation: portrait) {
